@@ -2,10 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>if-html</title>
+    <title>Сайт не про енотов</title>
 </head>
 <body>
 <h1>Моя первая страница</h1>
 <a href="about/index.html">Об авторе</a>
+<hr>
+<p>Front-end разработчик создает видимую для пользователя часть веб-страницы и его главная задача – точно передать
+в верстке то, что создал дизайнер, а также реализовать пользовательскую логику.</p>
+<p>Весь фронтенд состоит из трёх составляющих:
+    <br> &#10102; <i>HTML</i> &#8594; содержание и разметка &#128207;
+    <br> &#10103; <i>CSS</i> &#8594; внешний вид, позиционирование &#9999;&#65039;
+    <br> &#10104; <i>JavaScript</i> &#8594; логика &#128161;</p>
+<img src="img/front-end-developer-stack.svg" alt="Логотипы HTML5, CSS3 и JavaScript.">
+<ol>
+    <li>Знакомство с Web</li>
+        <ul>
+            <li>Кратка история Web и что такое интернет.</li>
+            <li>Как устроен браузер и как он получает страницы по сети.</li>
+            <li>Что такое Git?</li>
+            <li>Создание первого репозитория.</li>
+            <li>О файле .gitignore.</li>
+        </ul>
+    <li>HTML-вёрстка &#8212; первые шаги</li>
+        <ul>
+            <li>Настройка рабочей среды.</li>
+            <li>Краткая история HTML.</li>
+            <li>Какие бывают теги и что такое атрибут.</li>
+            <li>Теги для работы с текстом.</li>
+            <li>Создание собственной страницы.</li>
+        </ul>
+    <li>Погружение в HTML-разметку</li>
+        <ul>
+            <li>Мета-теги.</li>
+            <li>Мнемоники.</li>
+            <li>Тег для работы с изображением.</li>
+            <li>Теги для работы со списками.</li>
+            <li>Теги для работы с таблицами.</li>
+            <li>Теги для работы с формами</li>
+            <li>Div-блоки.</li>
+        </ul>
+</ol>
+<table border="1" width="50%">
+    <tr><th>Tag</th><th>Description</th></tr>
+    <tr><td>&lt;table&gt;</td><td>Defines a table</td></tr>
+    <tr><td>&lt;tr&gt;</td><td>Defines a row in a table</td></tr>
+    <tr><td>&lt;th&gt;</td><td rowspan="2">Defines a "header cell" / "cell" in a table</td></tr>
+    <tr><td>&lt;td&gt;</td></tr>
+    <tr><td colspan="2">Rarely used</td></tr>
+    <tr><td>&lt;caption&gt;</td><td>Defines a table caption</td></tr>
+    <tr><td>&lt;thead&gt;</td><td>Groups the header content in a table</td></tr>
+    <tr><td>&lt;tbody&gt;</td><td>Groups the body content in a table</td></tr>
+    <tr><td>&lt;tfoot&gt;</td><td>Groups the footer content in a table</td></tr>
+</table>
+<form method="Get" action='//' name="My first form"><fieldset >
+    <legend>My first form</legend>
+    <div><label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter name" required></div>
+    <div><label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter email" required></div>
+    <div><label for="pass">Password</label><br>
+        <input type="password" id="pass" name="password" placeholder="Enter password" required></div>
+    <div><label for="level">Your programming level</label><br>
+        <input type="range" id="level" name="level" min="1" max="10"></div>
+    <div><p>What does HTML stand for?</p>
+        <div><input type="checkbox" value="1" id="checkbox1" name="html">
+            <label for="checkbox1">Hyperlinks and Text Markup Language</label></div>
+        <div><input type="checkbox" value="2" id="checkbox2" name="html">
+            <label for="checkbox2">Home Tool Markup Language</label></div>
+        <div><input type="checkbox" value="3" id="checkbox3" name="html">
+            <label for="checkbox3">Hyper Text Markup Language</label></div></div>
+    <div><p>What does HTML stand for?</p>
+        <div><input type="radio" value="1" id="radio1" name="http">
+            <label for="radio1">Hyperlinks and Text Markup Language</label></div>
+        <div><input type="radio" value="2" id="radio2" name="http">
+            <label for="radio2">Home Tool Markup Language</label></div>
+        <div><input type="radio" value="3" id="radio3" name="http">
+            <label for="radio3">Hyper Text Markup Language</label></div></div>
+    <div><label for="comment">Comment</label><br>
+        <textarea id="comment" maxlength="500" placeholder="Comment" name="Comment" ></textarea></div>
+    <div><label for="select">What does HTML stand for?</label><br>
+        <select id="select" name="select_html">
+            <option disabled selected>Your answer</option>
+            <option value="1">Здесь могла быть ваша реклама</option>
+            <option value="2">И здесь тоже</option>
+        </select></div>
+   <br>
+    <div><input type="submit" id="send"></div>
+
+</fieldset></form>
 </body>
 </html>
