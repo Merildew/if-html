@@ -1,0 +1,143 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+}
+
+.offer-panel{
+    width: 1440px;
+    height: 569px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #383838;
+}
+
+.offer-title{
+    margin: 0 auto 20px;
+    width: 306px;
+    height: 47px;
+}
+
+h2+hr{
+    background-color: #F5BD41;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 4px;
+}
+
+.buttons-panel{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer-button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.support-advantages{
+    margin-left: 104px;
+    width: 296px;
+    height: 176px;
+}
+
+.communication-advantages{
+    width: 296px;
+    height: 178px;
+}
+
+.booking-advantages{
+    width: 296px;
+    height: 184px;
+}
+
+.reviews-advantages{
+    margin-right: 103px;
+    width: 296px;
+    height: 183px;
+}
+
+[src="img/support.svg"]{
+    margin-top:4px;
+}
+
+[src="img/community%20directly.svg"]{
+    margin-top: 8px;
+}
+
+[src="img/book%20online.svg"]{
+    margin-top: 17px ;
+}
+
+[src="img/reviews.svg"]{
+    margin-top:4px ;
+}
+
+.offer-panel p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #383838;
+    text-align: center;
+}
+
+.support-title{
+    width: 141px;
+    height: 28px;
+}
+
+.communicate-title{
+    width: 296px;
+    height: 28px;
+    margin-bottom: 2px;
+}
+
+.booking-title{
+    width: 168px;
+    height: 28px;
+    margin-bottom: 8px;
+}
+
+.reviews-title{
+    width: 225px;
+    height: 28px;
+    margin-bottom: 7px;
+}
+
+
+
