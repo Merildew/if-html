@@ -21,12 +21,17 @@
     margin: 0;
 }
 
+body{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+}
+
 .offer-panel{
     width: 1440px;
     height: 569px;
     background: #FFFFFF;
-    font-family: Roboto, sans-serif;
-    font-style: normal;
+    box-sizing: border-box;
+    padding-top: 120px;
 }
 
 h2{
@@ -37,7 +42,7 @@ h2{
 }
 
 .offer-title{
-    margin: 120px auto 20px;
+    margin: 0 auto 20px;
     width: 306px;
     height: 47px;
 }
@@ -65,23 +70,23 @@ h2+hr{
     justify-content: space-between;
 }
 
-.support{
+.support-advantages{
     margin-left: 104px;
     width: 296px;
     height: 176px;
 }
 
-.communication{
+.communication-advantages{
     width: 296px;
     height: 178px;
 }
 
-.booking{
+.booking-advantages{
     width: 296px;
     height: 184px;
 }
 
-.reviews{
+.reviews-advantages{
     margin-right: 103px;
     width: 296px;
     height: 183px;
