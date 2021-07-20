@@ -5,8 +5,36 @@
     <title>What do we offer</title>
     <link href="styles/advantages-styles.css" rel="stylesheet">
     <link href="styles/footer-styles.css" rel="stylesheet">
+    <link href="styles/top-section.css" rel="stylesheet">
 </head>
 <body>
+<div class="top-section">
+<header>
+    <img src="img/logo_vector.svg">
+    <div class="header-content">
+        <span>Stays <hr></span>
+        <span>Attractions</span>
+        <img src="img/Night.svg">
+        <img src="img/AccountCircle.svg">
+    </div>
+</header>
+<div class="top-panel">
+    <h1>Discover stays<br> to live, work or just relax</h1>
+    <label for="town-search">Your destination or hotel name</label>
+    <label for="date-search">Check-in — Check-out</label>
+    <form method="get" action="/" name="search-panel" class=search-panel>
+        <input class="search-input town-search" id="town-search" name="town" type="text" value="New York" placeholder="Destination or hotel name">
+        <input class="search-input date-search" id="date-search" name="date" type="text" value="Tue 15 Sept — Sat 19 Sept" placeholder="Date">
+        <input class="search-input visitors-search" type="text" name="visitors" value="2 Adults — 0 Children — 1 Room" placeholder="Visitors">
+        <input type="button" value="Search" id="search" >
+    </form>
+    <div class="apps-logo">
+        <a href="https://play.google.com/store"><img src="img/google-play-badge.svg"></a>
+        <a href="https://www.apple.com/app-store/"><img src="img/app-store-badge.svg"></a>
+    </div>
+
+</div>
+</div>
 <div class="offer-panel">
 <h2 class="offer-title">What do we offer</h2>
 <hr>
@@ -56,8 +84,6 @@
     <span>
         &copy 2020 Triphouse, Inc. All rights reserved
     </span>
-
-
 </footer>
 </body>
 </html>

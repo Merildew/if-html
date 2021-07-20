@@ -1,0 +1,142 @@
+.top-section{
+    background-image: url("../img/top-section-back.svg");
+    width: 1440px;
+    height: 900px;
+    padding-top: 51px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+header{
+    width: 1232px;
+    height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content{
+    display: flex;
+    align-items: flex-start;
+}
+
+header span{
+    Font-size: 24px;
+    Line-height: 28px;
+    font-weight: 400;
+    margin-right: 24px;
+    margin-top: 6px;
+}
+
+.header-content hr{
+    width: 50px;
+    height: 4px;
+    background-color: #F5BD41;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+}
+
+.header-content img{
+    margin-left: 24px;
+}
+
+[src="img/logo_vector.svg"], [src="img/AccountCircle.svg"]{
+    margin-bottom: 6px;
+}
+
+[src="img/Night.svg"]{
+    margin-top: 5px;
+}
+
+.top-panel{
+    width: 1232px;
+    height: 487px;
+    margin: 196px auto 120px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59px;
+}
+
+.top-panel label{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 100px 197px 24px 24px;
+}
+
+.search-panel{
+    width: 1223px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #383838;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-input{
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.town-search{
+    border-radius: 8px;
+    padding-left: 24px;
+    width: 467px;
+}
+
+.date-search{
+    width: 259px;
+    text-align: center;
+}
+
+.visitors-search{
+    width: 314px;
+    text-align: center;
+}
+
+.search-panel [type=button]{
+    background-color: #3077C6;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    width: 192px;
+    border-radius: 8px;
+    border: none;
+    justify-self: flex-end;
+}
+
+.search-input:focus, .search-input:hover {
+    border: 3px solid #F5BD41;
+    background-color: #F3F3F4;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+[type=button]:hover{
+    border: 2px #F5BD41 solid;
+    cursor: pointer;
+}
+
+.apps-logo{
+    margin-top: 120px;
+    width: 270px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
