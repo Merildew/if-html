@@ -80,7 +80,6 @@ h1{
     background-color: #FFFFFF;
     color: #383838;
     display: flex;
-    justify-content: flex-end;
 }
 
 .search-input{
@@ -116,13 +115,11 @@ h1{
     width: 192px;
     border-radius: 8px;
     border: none;
-    justify-self: flex-end;
 }
 
 .search-input:focus, .search-input:hover {
     border: 3px solid #F5BD41;
     background-color: #F3F3F4;
-    box-shadow: none;
     border-radius: 8px;
 }
 
