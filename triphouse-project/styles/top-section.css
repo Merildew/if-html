@@ -23,7 +23,9 @@ header{
     align-items: flex-start;
 }
 
-header span{
+.header-nav{
+    color: #FFFFFF;
+    text-decoration: none;
     Font-size: 24px;
     Line-height: 28px;
     font-weight: 400;
@@ -31,25 +33,24 @@ header span{
     margin-top: 6px;
 }
 
-.header-content hr{
-    width: 50px;
-    height: 4px;
-    background-color: #F5BD41;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8px;
+.header-nav:focus, .header-nav:hover{
+    border-bottom: 4px #F5BD41 solid;
+    padding-bottom: 8px;
 }
 
-.header-content img{
+.header-content path:hover{
+    fill: #F5BD41;
+}
+
+.header-content svg{
     margin-left: 24px;
 }
 
-[src="img/logo_vector.svg"], [src="img/AccountCircle.svg"]{
+[src="img/logo_vector.svg"], .account-svg{
     margin-bottom: 6px;
 }
 
-[src="img/Night.svg"]{
+.night-svg{
     margin-top: 5px;
 }
 
