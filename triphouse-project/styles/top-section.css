@@ -5,8 +5,6 @@
     padding-top: 51px;
     box-sizing: border-box;
     color: #FFFFFF;
-    min-height: 100vh;
-    background-size: cover;
 }
 
 header{
@@ -18,9 +16,14 @@ header{
     justify-content: space-between;
 }
 
+.logo-vector{
+    margin-bottom: 6px;
+    width: 205px;
+    height: 40px;
+}
+
 .header-content{
     display: flex;
-    align-items: flex-start;
 }
 
 .header-nav{
@@ -38,20 +41,28 @@ header{
     padding-bottom: 8px;
 }
 
-.header-content path:hover{
-    fill: #F5BD41;
-}
-
 .header-content svg{
     margin-left: 24px;
 }
 
-[src="img/logo_vector.svg"], .account-svg{
-    margin-bottom: 6px;
+.night-svg{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
 }
 
-.night-svg{
-    margin-top: 5px;
+.account-svg{
+    margin-bottom: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.header-content>svg>a:hover{
+    fill: #F5BD41;
+}
+
+.header-content>svg>a {
+    fill: #FFFFFF;
 }
 
 .top-panel{
@@ -138,3 +149,23 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
+
+.apple-store-badge{
+    width: 118px;
+    justify-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

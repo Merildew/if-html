@@ -17,10 +17,9 @@
 <path opacity="0.12" d="M10.44 32.3201C10.15 32.0101 9.97998 31.5302 9.97998 30.9202V31.0702C9.97998 31.6901 10.15 32.1701 10.44 32.4701L10.51 32.4001L10.44 32.3201Z" fill="black"/>
 <path opacity="0.12" d="M32.01 21.3L27.02 24.1301L27.11 24.2201L32 21.44C32.7 21.04 33.05 20.52 33.05 20C33 20.47 32.65 20.94 32.01 21.3Z" fill="black"/>
 <path opacity="0.25" d="M12.51 7.61994L32.01 18.7C32.64 19.06 33 19.52 33.06 20C33.06 19.48 32.71 18.95 32.01 18.56L12.51 7.47994C11.11 6.68994 9.96997 7.34994 9.96997 8.94994V9.09994C9.96997 7.48994 11.12 6.82994 12.51 7.61994Z" fill="white"/>
-<defs>
 <linearGradient id="paint0_linear" x1="21.7997" y1="8.70967" x2="5.01737" y2="25.4921" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00A0FF"/>
-<stop offset="0.00657445" stop-color="#00A1FF"/>
+<stop offset="0" stop-color="#00A0FF"/>
+<stop offset="0.445" stop-color="#00A1FF"/>
 <stop offset="0.2601" stop-color="#00BEFF"/>
 <stop offset="0.5122" stop-color="#00D2FF"/>
 <stop offset="0.7604" stop-color="#00DFFF"/>
@@ -43,5 +42,5 @@
 <stop offset="0.8009" stop-color="#06E775"/>
 <stop offset="1" stop-color="#00F076"/>
 </linearGradient>
-</defs>
+
 </svg>

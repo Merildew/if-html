@@ -92,20 +92,28 @@ h2+hr{
     height: 183px;
 }
 
-[src="img/support.svg"]{
+.support-svg{
     margin-top:4px;
+    width: 75px;
+    height: 92px;
 }
 
-[src="img/community%20directly.svg"]{
+.community-svg{
     margin-top: 8px;
+    width: 84px;
+    height: 84px;
 }
 
-[src="img/book%20online.svg"]{
+.book-svg{
     margin-top: 17px ;
+    width: 100px;
+    height: 67px;
 }
 
-[src="img/reviews.svg"]{
+.reviews-svg{
     margin-top:4px ;
+    width: 92px;
+    height: 84px;
 }
 
 .offer-panel p{
