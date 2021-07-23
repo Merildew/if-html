@@ -107,7 +107,7 @@ h1{
     text-align: center;
 }
 
-.search-panel [type=button]{
+.search-panel [type=submit]{
     background-color: #3077C6;
     color: #FFFFFF;
     font-weight: 500;
@@ -124,7 +124,7 @@ h1{
     border-radius: 8px;
 }
 
-[type=button]:hover{
+[type=submit]:hover{
     border: 2px #F5BD41 solid;
     cursor: pointer;
 }
