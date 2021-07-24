@@ -5,6 +5,7 @@
     padding-top: 51px;
     box-sizing: border-box;
     color: #FFFFFF;
+    object-fit: cover;
 }
 
 header{
@@ -154,18 +155,3 @@ h1{
     width: 118px;
     justify-self: flex-end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
