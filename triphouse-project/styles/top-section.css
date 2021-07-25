@@ -1,21 +1,18 @@
 .top-section{
     background-image: url("../img/top-section-back.svg");
-    width: 1440px;
-    height: 900px;
-    padding-top: 51px;
     box-sizing: border-box;
     color: #FFFFFF;
-    min-height: 100vh;
     background-size: cover;
+    padding: 51px 104px 120px;
 }
 
 header{
-    width: 1232px;
-    height: 46px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     justify-content: space-between;
+    height: 2em;
+    Font-size: 24px;
+    Line-height: 28px;
+    font-weight: 400;
 }
 
 .header-content{
@@ -25,9 +22,6 @@ header{
 .header-nav{
     color: #FFFFFF;
     text-decoration: none;
-    Font-size: 24px;
-    Line-height: 28px;
-    font-weight: 400;
     margin-right: 24px;
     margin-top: 6px;
 }
@@ -57,6 +51,17 @@ header{
     background-image: url("../LinkedSprite.svg#Night-hover");
 }
 
+.menu-icon{
+    background-image: url("../LinkedSprite.svg#menu");
+    width: 40px;
+    height: 28px;
+    display: none;
+}
+
+.menu-icon:hover, .menu-icon:focus{
+    background-image: url("../LinkedSprite.svg#menu-hover");
+}
+
 .header-icon{
     margin-left: 24px;
 }
@@ -66,9 +71,7 @@ header{
 }
 
 .top-panel{
-    width: 1232px;
-    height: 487px;
-    margin: 196px auto 120px;
+    margin-top: 202px;
 }
 
 h1{
@@ -77,21 +80,22 @@ h1{
     line-height: 59px;
 }
 
-.top-panel label{
-    display: inline-block;
+.search-labels{
+    display: flex;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
-    margin: 100px 197px 24px 24px;
+    margin: 12% 46% 24px 24px;
+    justify-content: space-between;
 }
 
 .search-panel{
-    width: 1223px;
-    height: 64px;
+    height: 2.7em;
     border-radius: 8px;
     background-color: #FFFFFF;
     color: #383838;
     display: flex;
+    font-size: 24px;
 }
 
 .search-input{
@@ -105,16 +109,16 @@ h1{
 .town-search{
     border-radius: 8px;
     padding-left: 24px;
-    width: 467px;
+    flex-basis: 38%;
 }
 
 .date-search{
-    width: 259px;
+    flex-basis: 20%;
     text-align: center;
 }
 
 .visitors-search{
-    width: 314px;
+    flex-basis: 26%;
     text-align: center;
 }
 
@@ -124,7 +128,7 @@ h1{
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    width: 192px;
+    flex-basis: 16%;
     border-radius: 8px;
     border: none;
 }
@@ -141,11 +145,119 @@ h1{
 }
 
 .apps-logo{
-    margin-top: 120px;
     width: 270px;
     height: 40px;
+    margin-top: 120px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 1280px) {
+    .search-panel{
+        font-size: 18px;
+    }
+
+    .search-input{
+        flex-basis: 33%;
+        font-size: 15px;
+    }
+
+    input[type="date" i]::-webkit-calendar-picker-indicator{
+        display: none;
+    }
+
+    .search-labels{
+        font-size: 15px;
+    }
+
+    .top-section{
+        padding-left: 73px;
+        padding-right: 73px;
+    }
+
+    .search-panel [type=submit]{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-labels{
+        display: none;
+    }
+    .search-panel{
+        flex-direction: column;
+        margin-top: 31px;
+        height: 10em;
+    }
+
+    .apps-logo{
+        margin-top: 32px;
+    }
+
+    .top-section{
+        padding-bottom: 40px;
+    }
+
+    .top-panel{
+        margin-top: 52px;
+    }
+
+    .search-input, .search-panel [type=submit]{
+        text-align: center;
+        font-size: 24px;
+        padding: 0;
+        border: 4px solid #F5BD41;
+        border-radius: 0;
+    }
+
+    .menu-icon{
+      display: block;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .header-content, header{
+        align-items: center;
+    }
+
+    .search-panel [type=submit]{
+        font-size: 19px;
+        padding: 7px;
+    }
+}
+
+@media (max-width: 520px){
+    .top-section{
+        padding: 0 16px 40px;
+    }
+
+    [src="LinkedSprite.svg#logo-vector"]{
+        width: 122px;
+        height: 24px;
+    }
+
+    .night-icon{
+        width: 16px;
+        height: 16px;
+    }
+
+    .account-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    .menu-icon{
+        width: 24px;
+        height: 16px;
+    }
+
+    h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
