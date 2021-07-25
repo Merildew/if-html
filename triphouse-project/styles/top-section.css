@@ -20,7 +20,6 @@ header{
 
 .header-content{
     display: flex;
-    align-items: flex-start;
 }
 
 .header-nav{
@@ -38,19 +37,31 @@ header{
     padding-bottom: 8px;
 }
 
-.header-content path:hover{
-    fill: #F5BD41;
+.account-icon{
+    background-image: url("../LinkedSprite.svg#AccountCircle");
+    width: 40px;
+    height: 40px;
 }
 
-.header-content svg{
+.account-icon:hover, .account-icon:focus{
+    background-image: url("../LinkedSprite.svg#AccountCircle-hover");
+}
+
+.night-icon{
+    background-image: url("../LinkedSprite.svg#Night");
+    width: 30px;
+    height: 30px;
+}
+
+.night-icon:hover, .night-icon:focus{
+    background-image: url("../LinkedSprite.svg#Night-hover");
+}
+
+.header-icon{
     margin-left: 24px;
 }
 
-[src="img/logo_vector.svg"], .account-svg{
-    margin-bottom: 6px;
-}
-
-.night-svg{
+.night-icon{
     margin-top: 5px;
 }
 
