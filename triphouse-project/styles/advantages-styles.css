@@ -35,8 +35,7 @@ body{
 .offer-panel{
     background: #FFFFFF;
     box-sizing: border-box;
-    padding-top: 120px;
-    padding-bottom: 122px;
+    padding: 120px 104px 122px;
 }
 
 .offer-title{
@@ -96,8 +95,6 @@ h2+hr{
 @media (min-width: 1441px) {
     .wrapper{
         max-width: 1440px;
-        padding-right: 104px;
-        padding-left: 104px;
     }
 }
 
@@ -110,15 +107,18 @@ h2+hr{
     .wrapper{
         max-width: 1023px;
     }
+
+    .offer-panel{
+        padding: 24px 20px 120px;
+    }
 }
 
 @media (max-width: 768px) {
     .wrapper{
         max-width: none;
     }
-
     .offer-panel{
-        padding: 24px 20px 40px;
+        padding-bottom: 40px;
     }
 
     .buttons-panel{
@@ -142,12 +142,6 @@ h2+hr{
         font-size: 28px;
         line-height: 33px;
         margin: 0;
-    }
-
-    .offer-panel{
-        min-height: 100vh;
-        box-sizing: border-box;
-
     }
 
     .buttons-panel{

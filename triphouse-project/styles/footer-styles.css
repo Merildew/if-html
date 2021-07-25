@@ -1,10 +1,7 @@
 footer{
-    width: 1440px;
-    height: 630px;
     background: #10367C;
     color: #FFFFFF;
-    padding-top: 120px;
-    padding-left: 104px;
+    padding: 120px 104px;
     box-sizing: border-box;
 }
 
@@ -23,6 +20,7 @@ footer a{
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 400;
+    margin-top: 24px;
 }
 
 footer span{
@@ -34,22 +32,61 @@ footer span{
 .footer-content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.about-footer{
-    width: 193px;
-    height: 211px;
-    margin-right: 223px;
-}
-
-.property-footer{
-    width: 133px;
-    height: 310px;
-    margin-right: 283px;
+.about-footer, .property-footer{
+   flex-basis: 38%;
 }
 
 .support-footer{
-    width: 233px;
-    height: 122px;
+    flex-basis: 27%;
+}
+
+.white-logo{
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    footer{
+        padding: 120px 73px 104px;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    footer{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 600px){
+    footer a{
+        display: none;
+    }
+
+    footer p{
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: underline;
+    }
+
+    footer{
+       text-align: center;
+    }
+
+    .footer-content{
+        flex-basis: 33%;
+    }
+
+    .white-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-panel{
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
 }
