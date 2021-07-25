@@ -26,25 +26,26 @@ body{
     font-style: normal;
 }
 
+.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
 .offer-panel{
-    width: 1440px;
-    height: 569px;
     background: #FFFFFF;
     box-sizing: border-box;
     padding-top: 120px;
+    padding-bottom: 122px;
 }
 
-h2{
+.offer-title{
+    margin-bottom: 20px;
+    text-align: center;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     color: #383838;
-}
-
-.offer-title{
-    margin: 0 auto 20px;
-    width: 306px;
-    height: 47px;
 }
 
 h2+hr{
@@ -59,56 +60,7 @@ h2+hr{
 .buttons-panel{
     margin-top: 80px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.offer-button{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.support-advantages{
-    margin-left: 104px;
-    width: 296px;
-    height: 176px;
-}
-
-.communication-advantages{
-    width: 296px;
-    height: 178px;
-}
-
-.booking-advantages{
-    width: 296px;
-    height: 184px;
-}
-
-.reviews-advantages{
-    margin-right: 103px;
-    width: 296px;
-    height: 183px;
-}
-
-[src="img/support.svg"]{
-    margin-top:4px;
-}
-
-[src="img/community%20directly.svg"]{
-    margin-top: 8px;
-}
-
-[src="img/book%20online.svg"]{
-    margin-top: 17px ;
-}
-
-[src="img/reviews.svg"]{
-    margin-top:4px ;
-}
-
-.offer-panel p{
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -116,28 +68,120 @@ h2+hr{
     text-align: center;
 }
 
-.support-title{
-    width: 141px;
-    height: 28px;
+.offer-button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8em;
+    width: 12em ;
 }
 
-.communicate-title{
-    width: 296px;
-    height: 28px;
-    margin-bottom: 2px;
+[src="LinkedSprite.svg#support"]{
+    margin-top:4px;
 }
 
-.booking-title{
-    width: 168px;
-    height: 28px;
-    margin-bottom: 8px;
+[src="LinkedSprite.svg#community-directly"]{
+    margin-top: 8px;
 }
 
-.reviews-title{
-    width: 225px;
-    height: 28px;
-    margin-bottom: 7px;
+[src="LinkedSprite.svg#book-online"]{
+    margin-top: 17px ;
 }
 
+[src="LinkedSprite.svg#reviews"]{
+    margin-top:4px ;
+}
 
+@media (min-width: 1441px) {
+    .wrapper{
+        max-width: 1440px;
+        padding-right: 104px;
+        padding-left: 104px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .wrapper{
+        max-width: 1232px;
+    }
+}
+@media (max-width: 1280px) {
+    .wrapper{
+        max-width: 1023px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        max-width: none;
+    }
+
+    .offer-panel{
+        padding: 24px 20px 40px;
+    }
+
+    .buttons-panel{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        margin-top: 80px;
+    }
+    .offer-button{
+        width: 50%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 520px){
+    h2+hr{
+        display: none;
+    }
+
+    .offer-title{
+        font-size: 28px;
+        line-height: 33px;
+        margin: 0;
+    }
+
+    .offer-panel{
+        min-height: 100vh;
+        box-sizing: border-box;
+
+    }
+
+    .buttons-panel{
+        margin: 0;
+        flex-direction: column;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .offer-button{
+        width: 100%;
+        margin-top: 32px;
+        height: 7em;
+        justify-content: space-between;
+    }
+
+    [src="LinkedSprite.svg#support"]{
+        width: 53px;
+        height: 65px;
+    }
+
+    [src="LinkedSprite.svg#community-directly"]{
+        width: 59px;
+        height: 59px;
+    }
+
+    [src="LinkedSprite.svg#book-online"]{
+        width: 70px;
+        height: 47px;
+    }
+
+    [src="LinkedSprite.svg#reviews"]{
+        width: 65px;
+        height: 59px;
+    }
+}
 
