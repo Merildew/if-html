@@ -1,6 +1,5 @@
 .top-section{
     background-image: url("../img/top-section-back.svg");
-    box-sizing: border-box;
     color: #FFFFFF;
     background-size: cover;
     padding: 51px 104px 120px;
@@ -10,9 +9,14 @@ header{
     display: flex;
     justify-content: space-between;
     height: 2em;
-    Font-size: 24px;
-    Line-height: 28px;
+    font-size: 24px;
+    line-height: 28px;
     font-weight: 400;
+}
+
+[src="LinkedSprite.svg#logo-vector"]{
+    width: 205px;
+    height: 40px;
 }
 
 .header-content{
@@ -45,6 +49,7 @@ header{
     background-image: url("../LinkedSprite.svg#Night");
     width: 30px;
     height: 30px;
+    margin-top: 5px;
 }
 
 .night-icon:hover, .night-icon:focus{
@@ -64,10 +69,6 @@ header{
 
 .header-icon{
     margin-left: 24px;
-}
-
-.night-icon{
-    margin-top: 5px;
 }
 
 .top-panel{
@@ -106,6 +107,12 @@ h1{
     line-height: 21px;
 }
 
+.search-input:focus, .search-input:hover {
+    border: 3px solid #F5BD41;
+    background-color: #F3F3F4;
+    border-radius: 8px;
+}
+
 .town-search{
     border-radius: 8px;
     padding-left: 24px;
@@ -133,12 +140,6 @@ h1{
     border: none;
 }
 
-.search-input:focus, .search-input:hover {
-    border: 3px solid #F5BD41;
-    background-color: #F3F3F4;
-    border-radius: 8px;
-}
-
 [type=submit]:hover{
     border: 2px #F5BD41 solid;
     cursor: pointer;
@@ -152,6 +153,16 @@ h1{
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+}
+
+[src="LinkedSprite.svg#google-play-badge"]{
+    width: 135px;
+    height: 40px;
+}
+
+[src="LinkedSprite.svg#app-store-badge"]{
+    width: 118px;
+    height: 40px;
 }
 
 @media (max-width: 1280px) {
@@ -186,6 +197,7 @@ h1{
     .search-labels{
         display: none;
     }
+
     .search-panel{
         flex-direction: column;
         margin-top: 31px;
@@ -206,9 +218,13 @@ h1{
 
     .search-input, .search-panel [type=submit]{
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
         padding: 0;
         border: 4px solid #F5BD41;
+        border-radius: 0;
+    }
+
+    .search-input:hover, .search-input:focus{
         border-radius: 0;
     }
 
@@ -225,7 +241,7 @@ h1{
     }
 
     .search-panel [type=submit]{
-        font-size: 19px;
+        font-size: 24px;
         padding: 7px;
     }
 }

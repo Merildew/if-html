@@ -2,7 +2,12 @@ footer{
     background: #10367C;
     color: #FFFFFF;
     padding: 120px 104px;
-    box-sizing: border-box;
+}
+
+[src="LinkedSprite.svg#logo-vector-white"]{
+    display: none;
+    width:98px;
+    height: 19px;
 }
 
 .footer-panel{
@@ -10,6 +15,7 @@ footer{
     line-height: 23px;
     font-size: 20px;
     margin-bottom: 64px;
+    font-weight: 400;
 }
 
 footer p{
@@ -19,14 +25,12 @@ footer p{
 footer a{
     color: #FFFFFF;
     text-decoration: none;
-    font-weight: 400;
     margin-top: 24px;
 }
 
 footer span{
     font-size: 14px;
     line-height: 16px;
-    font-weight: 400;
 }
 
 .footer-content{
@@ -42,18 +46,14 @@ footer span{
     flex-basis: 27%;
 }
 
-.white-logo{
-    display: none;
-}
-
 @media (max-width: 1280px) {
     footer{
-        padding: 120px 73px 104px;
+        padding-left: 73px;
+        padding-right: 73px;
     }
 }
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px){
     footer{
         padding: 40px 20px;
     }
@@ -78,7 +78,7 @@ footer span{
         flex-basis: 33%;
     }
 
-    .white-logo{
+    [src="LinkedSprite.svg#logo-vector-white"]{
         display: block;
         margin-left: auto;
         margin-right: auto;

@@ -1,46 +1,11 @@
-/* roboto-regular - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-    url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* roboto-500 - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
-    url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-*{
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-}
-
-.wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
-
 .offer-panel{
     background: #FFFFFF;
-    box-sizing: border-box;
     padding: 120px 104px 122px;
+    text-align: center;
 }
 
 .offer-title{
     margin-bottom: 20px;
-    text-align: center;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -64,7 +29,6 @@ h2+hr{
     font-size: 24px;
     line-height: 28px;
     color: #383838;
-    text-align: center;
 }
 
 .offer-button{
@@ -78,55 +42,47 @@ h2+hr{
 
 [src="LinkedSprite.svg#support"]{
     margin-top:4px;
+    width: 75px;
+    height: 92px;
 }
 
 [src="LinkedSprite.svg#community-directly"]{
     margin-top: 8px;
+    width: 84px;
+    height: 84px;
 }
 
 [src="LinkedSprite.svg#book-online"]{
-    margin-top: 17px ;
+    margin-top: 17px;
+    width: 100px;
+    height: 67px;
 }
 
 [src="LinkedSprite.svg#reviews"]{
-    margin-top:4px ;
+    margin-top: 4px;
+    width: 92px;
+    height: 84px;
 }
 
-@media (min-width: 1441px) {
-    .wrapper{
-        max-width: 1440px;
-    }
-}
-
-@media (max-width: 1440px) {
-    .wrapper{
-        max-width: 1232px;
-    }
-}
 @media (max-width: 1280px) {
-    .wrapper{
-        max-width: 1023px;
-    }
-
     .offer-panel{
-        padding: 24px 20px 120px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .wrapper{
-        max-width: none;
-    }
     .offer-panel{
         padding-bottom: 40px;
+        padding-top: 24px;
     }
 
     .buttons-panel{
         flex-wrap: wrap;
         justify-content: space-around;
-        align-content: space-around;
         margin-top: 80px;
     }
+
     .offer-button{
         width: 50%;
         justify-content: space-around;
