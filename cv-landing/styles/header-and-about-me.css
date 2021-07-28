@@ -1,0 +1,93 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    padding-right: 104px;
+    padding-left: 104px;
+}
+
+header::after{
+    content: "";
+    border-bottom: #3D3B3C 1px solid;
+    top: 100%;
+    width: 86%;
+    position: absolute;
+}
+
+header a{
+    text-decoration: none;
+    color: #3D3B3C;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 40px 0;
+}
+
+header a:focus {
+    color: #120D0E;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.about-section{
+    padding: 72px 104px;
+    position: relative;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 66px;
+    font-weight: 500;
+    color: #120D0E;
+    margin-bottom: 8px;
+}
+
+h2+h2{
+    color: #BEBEBE;
+}
+
+.about-section p{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #3D3B3C;
+    width: 26em;
+}
+
+.about-section p+p{
+    margin-top: 26px;
+}
+.about-me-text{
+    margin: 40px 0 72px;
+}
+
+.about-bottoms{
+    display: flex;
+    text-align: center;
+}
+
+.about-bottoms a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 24px;
+    background: #3A4576;
+    padding: 14px 20px;
+}
+
+.about-section a+a{
+    margin-right: 0;
+    padding: 14px 31px;
+}
+
+.about-section img{
+    position: absolute;
+    top: 72px;
+    right: 104px;
+}
+
