@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg"><defs><style>.icon { display: none; }.icon:target { display: inline; }</style></defs>
+<svg viewBox="0 0 32 21"><g id="arrow-hover" class="icon">
+    <path d="M3.76 0.906616L16 13.1199L28.24 0.906616L32 4.66662L16 20.6666L0 4.66662L3.76 0.906616Z" fill="##120D0E"/>
+</g></svg>
+<svg viewBox="0 0 32 21"><g id="arrow" class="icon">
+    <path d="M3.76 0.906616L16 13.1199L28.24 0.906616L32 4.66662L16 20.6666L0 4.66662L3.76 0.906616Z" fill="#DEDEDE"/>
+</g></svg>
+
+</svg>
