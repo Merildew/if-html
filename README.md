@@ -1,1 +1,1 @@
-# if-html
+Practice in HTML/CSS fot Intellect Fox courses
