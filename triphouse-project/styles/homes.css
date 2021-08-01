@@ -1,0 +1,294 @@
+:root {
+    --homes-img-size:296px;
+}
+
+.homes-section{
+    background-color: #EAF0F9;
+    text-align: center;
+    padding: 120px 104px 122px;
+    position: relative;
+}
+
+.homes-panel{
+    margin-top: 106px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    text-align: left;
+}
+
+.homes{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    flex-basis: 24%;
+}
+
+.homes-link{
+    position: relative;
+    width: var(--homes-img-size);
+    height: var(--homes-img-size);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homes-link-1{
+    background-image: url("../img/homes1.svg");
+}
+.homes-link-2{
+    background-image: url("../img/homes2.svg");
+}
+.homes-link-3{
+    background-image: url("../img/homes3.svg");
+}
+.homes-link-4{
+    background-image: url("../img/homes4.svg");
+}
+
+.homes-link::after{
+    content: "";
+    color: #3077C6;
+    text-decoration: none;
+    top: 100% ;
+    position: absolute;
+    margin-top: 24px;
+}
+
+.homes-1 .homes-link::after{
+    content: "Hotel Leopold";
+}
+.homes-2 .homes-link::after{
+    content: "Apartment Sunshine";
+}
+.homes-3 .homes-link::after{
+    content: "Villa Kunerad";
+}
+.homes-4 .homes-link::after{
+    content: "Hostel Friendship";
+}
+
+.homes::after{
+    color: #BFBFBF;
+    margin-top: 78px;
+}
+
+.homes-1::after{
+    content: "Saint Petersburg, Russia";
+}
+.homes-2::after{
+    content: "Santa  Cruz de Tenerife, Spain";
+}
+.homes-3::after{
+    content: "Vysokie Tatry, Slowakia";
+}
+.homes-4::after{
+    content: "Berlin, Germany";
+}
+
+.homes-section input{
+    display: none;
+}
+
+.switch1:checked ~ .homes-labels label:nth-child(4),
+.switch2:checked ~ .homes-labels label:nth-child(1),
+.switch3:checked ~ .homes-labels label:nth-child(2),
+.switch4:checked ~ .homes-labels label:nth-child(3){
+    background: url('../LinkedSprite.svg#arrow') no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 48%;
+    left: 80px;
+    z-index: 1;
+    transform: scale(-1,1);
+}
+
+.switch1:checked ~ .homes-labels label:nth-child(2),
+.switch2:checked ~ .homes-labels label:nth-child(3),
+.switch3:checked ~ .homes-labels label:nth-child(4),
+.switch4:checked ~ .homes-labels label:nth-child(1){
+    background: url('../LinkedSprite.svg#arrow') no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 48%;
+    right: 80px;
+    z-index: 1;
+}
+
+@media (max-width: 1440px) {
+    :root{
+        --homes-img-size: 263px;
+    }
+
+    .homes-panel{
+        justify-content: space-evenly;
+    }
+
+    .homes{
+        flex-basis: auto;
+        width: var(--homes-img-size);
+    }
+}
+
+@media (max-width: 1280px) {
+    .homes-section{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(4),
+    .switch2:checked ~ .homes-labels label:nth-child(1),
+    .switch3:checked ~ .homes-labels label:nth-child(2),
+    .switch4:checked ~ .homes-labels label:nth-child(3){
+        left: 20px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(2),
+    .switch2:checked ~ .homes-labels label:nth-child(3),
+    .switch3:checked ~ .homes-labels label:nth-child(4),
+    .switch4:checked ~ .homes-labels label:nth-child(1){
+        right: 20px;
+    }
+}
+
+@media (max-width: 1140px) {
+    :root{
+        --homes-img-size: 230px;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root{
+        --homes-img-size: 263px;
+    }
+
+    .homes-4{
+        display: none;
+    }
+}
+
+@media (max-width: 925px){
+    :root{
+        --homes-img-size: 245px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(4),
+    .switch2:checked ~ .homes-labels label:nth-child(1),
+    .switch3:checked ~ .homes-labels label:nth-child(2),
+    .switch4:checked ~ .homes-labels label:nth-child(3){
+        left: 8px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(2),
+    .switch2:checked ~ .homes-labels label:nth-child(3),
+    .switch3:checked ~ .homes-labels label:nth-child(4),
+    .switch4:checked ~ .homes-labels label:nth-child(1){
+        right: 8px;
+    }
+}
+
+@media (max-width: 820px) {
+    :root {
+        --homes-img-size: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root{
+        --homes-img-size: 263px;
+    }
+
+    .homes{
+        padding: 0;
+    }
+
+    .homes-section{
+        padding: 24px 20px 40px;
+    }
+
+    .homes-panel{
+        margin-top: 80px;
+    }
+
+    .homes-3{
+        display: none;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(4),
+    .switch2:checked ~ .homes-labels label:nth-child(1),
+    .switch3:checked ~ .homes-labels label:nth-child(2),
+    .switch4:checked ~ .homes-labels label:nth-child(3){
+        left: 4px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(2),
+    .switch2:checked ~ .homes-labels label:nth-child(3),
+    .switch3:checked ~ .homes-labels label:nth-child(4),
+    .switch4:checked ~ .homes-labels label:nth-child(1){
+        right: 4px;
+    }
+}
+
+@media (max-width: 590px) {
+    :root {
+        --homes-img-size: 230px;
+    }
+}
+
+@media (max-width: 525px) {
+    :root {
+        --homes-img-size: 180px;
+    }
+
+    .homes-section{
+        padding: 40px 8px;
+    }
+
+    .homes-panel{
+        margin-top: 32px;
+    }
+
+    .homes-section h2{
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .homes-link::after{
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 8px;
+    }
+
+    .homes::after{
+        margin: 26px 0 0;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    :root{
+        --homes-img-size: 156px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(4),
+    .switch2:checked ~ .homes-labels label:nth-child(1),
+    .switch3:checked ~ .homes-labels label:nth-child(2),
+    .switch4:checked ~ .homes-labels label:nth-child(3){
+        width: 28px;
+        height: 28px;
+    }
+
+    .switch1:checked ~ .homes-labels label:nth-child(2),
+    .switch2:checked ~ .homes-labels label:nth-child(3),
+    .switch3:checked ~ .homes-labels label:nth-child(4),
+    .switch4:checked ~ .homes-labels label:nth-child(1){
+        width: 28px;
+        height: 28px;
+    }
+}
+
+

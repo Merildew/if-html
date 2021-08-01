@@ -28,11 +28,22 @@ header{
     text-decoration: none;
     margin-right: 24px;
     margin-top: 6px;
+    position: relative;
 }
 
-.header-nav:focus, .header-nav:hover{
-    border-bottom: 4px #F5BD41 solid;
-    padding-bottom: 8px;
+.header-nav:active::after, .header-nav:hover::after{
+    content: "";
+    border-bottom: #F5BD41 4px solid;
+    position: absolute;
+    top: 86%;
+    background-color: #F5BD41;
+    width: 85%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.header-nav+.header-nav:active::after, .header-nav+.header-nav:hover::after{
+    width: 95%;
 }
 
 .account-icon{
@@ -41,7 +52,7 @@ header{
     height: 40px;
 }
 
-.account-icon:hover, .account-icon:focus{
+.account-icon:hover, .account-icon:active{
     background-image: url("../LinkedSprite.svg#AccountCircle-hover");
 }
 
@@ -52,7 +63,7 @@ header{
     margin-top: 5px;
 }
 
-.night-icon:hover, .night-icon:focus{
+.night-icon:hover, .night-icon:active{
     background-image: url("../LinkedSprite.svg#Night-hover");
 }
 
@@ -63,7 +74,7 @@ header{
     display: none;
 }
 
-.menu-icon:hover, .menu-icon:focus{
+.menu-icon:hover, .menu-icon:active{
     background-image: url("../LinkedSprite.svg#menu-hover");
 }
 
@@ -105,16 +116,17 @@ h1{
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    box-sizing: content-box;
 }
 
-.search-input:focus, .search-input:hover {
+.search-input:focus, .search-input:hover{
     border: 3px solid #F5BD41;
     background-color: #F3F3F4;
     border-radius: 8px;
 }
 
 .town-search{
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     padding-left: 24px;
     flex-basis: 38%;
 }
@@ -171,7 +183,7 @@ h1{
     }
 
     .search-input{
-        flex-basis: 33%;
+        flex-basis: 28%;
         font-size: 15px;
     }
 

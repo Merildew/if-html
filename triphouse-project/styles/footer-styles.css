@@ -36,20 +36,17 @@ footer span{
 .footer-content{
     display: flex;
     flex-direction: column;
-}
-
-.about-footer, .property-footer{
-   flex-basis: 38%;
-}
-
-.support-footer{
-    flex-basis: 27%;
+    flex-basis: 33%;
 }
 
 @media (max-width: 1280px) {
     footer{
         padding-left: 73px;
         padding-right: 73px;
+    }
+
+    footer a{
+        font-size: 18px;
     }
 }
 
@@ -72,10 +69,6 @@ footer span{
 
     footer{
        text-align: center;
-    }
-
-    .footer-content{
-        flex-basis: 33%;
     }
 
     [src="LinkedSprite.svg#logo-vector-white"]{
