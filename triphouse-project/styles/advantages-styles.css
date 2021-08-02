@@ -4,21 +4,15 @@
     text-align: center;
 }
 
-.offer-title{
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    color: #383838;
-}
-
-h2+hr{
+.offer-title::after{
+    content: "";
+    border-bottom: #F5BD41 4px solid;
+    position: absolute;
+    top: 142%;
     background-color: #F5BD41;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
     width: 100px;
-    height: 4px;
+    left: 50%;
+    transform: translate(-50%,50%);
 }
 
 .buttons-panel{

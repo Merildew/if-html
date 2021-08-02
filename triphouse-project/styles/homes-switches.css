@@ -1,0 +1,129 @@
+.switch2:checked~.homes-panel .homes-link-1::after{
+    content: "Hostel Friendship";
+}
+.switch2:checked~.homes-panel .homes-link-2::after{
+    content: "Hotel Leopold";
+}
+.switch2:checked~.homes-panel .homes-link-3::after{
+    content: "Apartment Sunshine";
+}
+.switch2:checked~.homes-panel .homes-link-4::after{
+    content: "Villa Kunerad";
+}
+
+.switch3:checked~.homes-panel .homes-link-1::after{
+    content: "Villa Kunerad";
+}
+.switch3:checked~.homes-panel .homes-link-2::after{
+    content: "Hostel Friendship";
+}
+.switch3:checked~.homes-panel .homes-link-3::after{
+    content: "Hotel Leopold";
+}
+.switch3:checked~.homes-panel .homes-link-4::after{
+    content: "Apartment Sunshine";
+}
+
+.switch4:checked~.homes-panel .homes-link-1::after{
+    content: "Apartment Sunshine";
+}
+.switch4:checked~.homes-panel .homes-link-2::after{
+    content: "Villa Kunerad";
+}
+.switch4:checked~.homes-panel .homes-link-3::after{
+    content: "Hostel Friendship";
+}
+.switch4:checked~.homes-panel .homes-link-4::after{
+    content: "Hotel Leopold";
+}
+
+.switch2:checked~.homes-panel .homes-link{
+    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
+}
+.switch3:checked~.homes-panel .homes-link{
+    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
+}
+.switch4:checked~.homes-panel .homes-link{
+    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
+}
+.switch1:checked~.homes-panel .homes-link{
+    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
+}
+
+.switch2:checked~.homes-panel .homes-link-1{
+    background-image: url("../img/homes4.svg");
+}
+.switch2:checked~.homes-panel .homes-link-2{
+    background-image: url("../img/homes1.svg");
+}
+.switch2:checked~.homes-panel .homes-link-3{
+    background-image: url("../img/homes2.svg");
+}
+.switch2:checked~.homes-panel .homes-link-4{
+    background-image: url("../img/homes3.svg");
+}
+.switch3:checked~.homes-panel .homes-link-1{
+    background-image: url("../img/homes3.svg");
+}
+.switch3:checked~.homes-panel .homes-link-2{
+    background-image: url("../img/homes4.svg");
+}
+.switch3:checked~.homes-panel .homes-link-3{
+    background-image: url("../img/homes1.svg");
+}
+.switch3:checked~.homes-panel .homes-link-4{
+    background-image: url("../img/homes2.svg");
+}
+.switch4:checked~.homes-panel .homes-link-1{
+    background-image: url("../img/homes2.svg");
+}
+.switch4:checked~.homes-panel .homes-link-2{
+    background-image: url("../img/homes3.svg");
+}
+.switch4:checked~.homes-panel .homes-link-3{
+    background-image: url("../img/homes4.svg");
+}
+.switch4:checked~.homes-panel .homes-link-4{
+    background-image: url("../img/homes1.svg");
+}
+
+
+.switch2:checked~.homes-panel .homes-1::after{
+    content: "Berlin, Germany";
+}
+.switch2:checked~.homes-panel .homes-2::after{
+    content: "Saint Petersburg, Russia";
+}
+.switch2:checked~.homes-panel .homes-3::after{
+    content: "Santa  Cruz de Tenerife, Spain";
+}
+.switch2:checked~.homes-panel .homes-4::after{
+    content: "Vysokie Tatry, Slowakia";
+}
+.switch3:checked~.homes-panel .homes-1::after{
+    content: "Vysokie Tatry, Slowakia";
+}
+.switch3:checked~.homes-panel .homes-2::after{
+    content: "Berlin, Germany";
+}
+.switch3:checked~.homes-panel .homes-3::after{
+    content: "Saint Petersburg, Russia";
+}
+.switch3:checked~.homes-panel .homes-4::after{
+    content: "Santa  Cruz de Tenerife, Spain";
+}
+.switch4:checked~.homes-panel .homes-1::after{
+    content: "Santa  Cruz de Tenerife, Spain";
+}
+.switch4:checked~.homes-panel .homes-2::after{
+    content: "Vysokie Tatry, Slowakia";
+}
+.switch4:checked~.homes-panel .homes-3::after{
+    content: "Berlin, Germany";
+}
+.switch4:checked~.homes-panel .homes-4::after{
+    content: "Saint Petersburg, Russia";
+}
+
+
+
