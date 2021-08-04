@@ -17,7 +17,7 @@
     text-align: left;
 }
 
-.homes{
+.homes-item{
     display: flex;
     flex-direction: column;
     font-weight: 400;
@@ -69,7 +69,7 @@
     content: "Hostel Friendship";
 }
 
-.homes::after{
+.homes-item::after{
     color: #BFBFBF;
     margin-top: 78px;
 }
@@ -127,7 +127,7 @@
         justify-content: space-evenly;
     }
 
-    .homes{
+    .homes-item{
         flex-basis: auto;
         width: var(--homes-img-size);
     }
@@ -201,7 +201,7 @@
         --homes-img-size: 263px;
     }
 
-    .homes{
+    .homes-item{
         padding: 0;
     }
 
@@ -262,7 +262,7 @@
         margin-top: 8px;
     }
 
-    .homes::after{
+    .homes-item::after{
         margin: 26px 0 0;
         font-size: 12px;
         line-height: 14px;

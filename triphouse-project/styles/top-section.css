@@ -23,7 +23,7 @@ header{
     display: flex;
 }
 
-.header-nav{
+.header-link{
     color: #FFFFFF;
     text-decoration: none;
     margin-right: 24px;
@@ -31,7 +31,7 @@ header{
     position: relative;
 }
 
-.header-nav:active::after, .header-nav:hover::after{
+.header-link:active::after, .header-link:hover::after{
     content: "";
     border-bottom: #F5BD41 4px solid;
     position: absolute;
@@ -42,7 +42,7 @@ header{
     transform: translate(-50%,50%);
 }
 
-.header-nav+.header-nav:active::after, .header-nav+.header-nav:hover::after{
+.header-link+.header-link:active::after, .header-link+.header-link:hover::after{
     width: 95%;
 }
 
@@ -244,7 +244,7 @@ h1{
       display: block;
     }
 
-    .header-nav{
+    .header-link{
         display: none;
     }
 

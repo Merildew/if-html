@@ -16,6 +16,7 @@
     url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -40,7 +41,6 @@ h2{
     color: #383838;
     position: relative;
 }
-
 
 @media (max-width: 1440px), (min-width: 1440px) {
     .wrapper{

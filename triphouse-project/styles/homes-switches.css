@@ -10,7 +10,6 @@
 .switch2:checked~.homes-panel .homes-link-4::after{
     content: "Villa Kunerad";
 }
-
 .switch3:checked~.homes-panel .homes-link-1::after{
     content: "Villa Kunerad";
 }
@@ -23,7 +22,6 @@
 .switch3:checked~.homes-panel .homes-link-4::after{
     content: "Apartment Sunshine";
 }
-
 .switch4:checked~.homes-panel .homes-link-1::after{
     content: "Apartment Sunshine";
 }
@@ -37,15 +35,9 @@
     content: "Hotel Leopold";
 }
 
-.switch2:checked~.homes-panel .homes-link{
-    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
-}
-.switch3:checked~.homes-panel .homes-link{
-    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
-}
-.switch4:checked~.homes-panel .homes-link{
-    transition: all 550ms cubic-bezier(.49,.43,.08,.9);
-}
+.switch2:checked~.homes-panel .homes-link,
+.switch3:checked~.homes-panel .homes-link,
+.switch4:checked~.homes-panel .homes-link,
 .switch1:checked~.homes-panel .homes-link{
     transition: all 550ms cubic-bezier(.49,.43,.08,.9);
 }
@@ -86,7 +78,6 @@
 .switch4:checked~.homes-panel .homes-link-4{
     background-image: url("../img/homes1.svg");
 }
-
 
 .switch2:checked~.homes-panel .homes-1::after{
     content: "Berlin, Germany";

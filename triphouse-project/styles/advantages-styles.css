@@ -1,4 +1,4 @@
-.offer-panel{
+.offer-section{
     background: #FFFFFF;
     padding: 120px 104px 122px;
     text-align: center;
@@ -15,7 +15,7 @@
     transform: translate(-50%,50%);
 }
 
-.buttons-panel{
+.advantages-panel{
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@
     color: #383838;
 }
 
-.offer-button{
+.advantage-item{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -59,25 +59,25 @@
 }
 
 @media (max-width: 1280px) {
-    .offer-panel{
+    .offer-section{
         padding-right: 20px;
         padding-left: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .offer-panel{
+    .offer-section{
         padding-bottom: 40px;
         padding-top: 24px;
     }
 
-    .buttons-panel{
+    .advantages-panel{
         flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 80px;
     }
 
-    .offer-button{
+    .advantage-item{
         width: 50%;
         justify-content: space-around;
     }
@@ -94,14 +94,14 @@
         margin: 0;
     }
 
-    .buttons-panel{
+    .advantages-panel{
         margin: 0;
         flex-direction: column;
         font-size: 15px;
         line-height: 18px;
     }
 
-    .offer-button{
+    .advantage-item{
         width: 100%;
         margin-top: 32px;
         height: 7em;
