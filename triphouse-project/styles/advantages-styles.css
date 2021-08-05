@@ -34,25 +34,25 @@
     width: 12em ;
 }
 
-[src="LinkedSprite.svg#support"]{
+[src="../assets/LinkedSprite.svg#support"]{
     margin-top:4px;
     width: 75px;
     height: 92px;
 }
 
-[src="LinkedSprite.svg#community-directly"]{
+[src="../assets/LinkedSprite.svg#community-directly"]{
     margin-top: 8px;
     width: 84px;
     height: 84px;
 }
 
-[src="LinkedSprite.svg#book-online"]{
+[src="../assets/LinkedSprite.svg#book-online"]{
     margin-top: 17px;
     width: 100px;
     height: 67px;
 }
 
-[src="LinkedSprite.svg#reviews"]{
+[src="../assets/LinkedSprite.svg#reviews"]{
     margin-top: 4px;
     width: 92px;
     height: 84px;
@@ -108,22 +108,22 @@
         justify-content: space-between;
     }
 
-    [src="LinkedSprite.svg#support"]{
+    [src="../assets/LinkedSprite.svg#support"]{
         width: 53px;
         height: 65px;
     }
 
-    [src="LinkedSprite.svg#community-directly"]{
+    [src="../assets/LinkedSprite.svg#community-directly"]{
         width: 59px;
         height: 59px;
     }
 
-    [src="LinkedSprite.svg#book-online"]{
+    [src="../assets/LinkedSprite.svg#book-online"]{
         width: 70px;
         height: 47px;
     }
 
-    [src="LinkedSprite.svg#reviews"]{
+    [src="../assets/LinkedSprite.svg#reviews"]{
         width: 65px;
         height: 59px;
     }

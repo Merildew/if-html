@@ -1,0 +1,130 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title TripHouse
+        link(href="../styles/advantages-styles.css" rel="stylesheet")
+        link(href="../styles/footer-styles.css" rel="stylesheet")
+        link(href="../styles/top-section.css" rel="stylesheet")
+        link(href="../styles/main.css" rel="stylesheet")
+        link(href="../styles/homes.css" rel="stylesheet")
+        link(href="../styles/homes-switches.css" rel="stylesheet")
+        link(href="../styles/destinations.css" rel="stylesheet")
+        link(href="../styles/sign-up.css" rel="stylesheet")
+    body
+        .wrapper
+            section.top-section
+                header
+                    img(src="../assets/LinkedSprite.svg#logo-vector" alt="Blue text TripHouse placed as logo of site")
+                    .header-content
+                        a.header-link(href="#") Stays
+                        a.header-link(href="#") Attractions
+                        a.header-icon.night-icon(href="#")
+                        a.header-icon.account-icon(href="#")
+                        a.header-icon.menu-icon(href="#")
+                .top-panel
+                    h1 Discover stay
+                        br
+                        | to live, work or just relax
+                    .search-labels
+                        label(for="town-search") Your destination or hotel name
+                        label(for="date-search") Check-in — Check-out
+                    form.search-panel(method="get" action="/" name="search-panel")
+                        input.search-input.town-search#town-search(name="town" type="text" placeholder="Destination or hotel name")
+                        input.search-input.date-search#date-search(name="date" type="date")
+                        input.search-input.visitors-search(type="text" name="visitors" placeholder="Visitors")
+                        input(type="submit" value="Search")
+                    .apps-logo
+                        a(href="https://play.google.com/store")
+                            img(src="../assets/LinkedSprite.svg#google-play-badge" alt="")
+                        a(href="https://www.apple.com/app-store/")
+                            img(src="../assets/LinkedSprite.svg#app-store-badge" alt="")
+            section.offer-section
+                h2.offer-title What do we offer
+                .advantages-panel
+                    .advantage-item
+                        img(src="../assets/LinkedSprite.svg#support" alt="blue headphones with microphone")
+                        p Support 24/7
+                    .advantage-item
+                        img(src="../assets/LinkedSprite.svg#community-directly" alt="2 blue conversation boxes near each other")
+                        p Communicate directly
+                    .advantage-item
+                        img(src="../assets/LinkedSprite.svg#book-online" alt="blue laptop behind blue mobile phone")
+                        p Book online
+                    .advantage-item
+                        img(src="../assets/LinkedSprite.svg#reviews" alt="blue thumb shows the class gesture")
+                        p Real guest reviews
+            section.homes-section
+                h2 Homes guests loves
+                input.switch1#switch1(checked type="radio" name="slider")
+                input.switch2#switch2(type="radio" name="slider")
+                input.switch3#switch3(type="radio" name="slider")
+                input.switch4#switch4(type="radio" name="slider")
+                .homes-panel
+                    .homes-item.homes-1
+                        a.homes-link.homes-link-1(href="#")
+                    .homes-item.homes-2
+                        a.homes-link.homes-link-2(href="#")
+                    .homes-item.homes-3
+                        a.homes-link.homes-link-3(href="#")
+                    .homes-item.homes-4
+                        a.homes-link.homes-link-4(href="#")
+                .homes-labels
+                    label(for="switch1")
+                    label(for="switch2")
+                    label(for="switch3")
+                    label(for="switch4")
+            section.destinations-section
+                h2 The best destinations
+                .destination-menu
+                    a.regions-switch(href="#")
+                    a.cities-switch(href="#")
+                    a.places-switch(href="#")
+                .destination-panel
+                    .destination-links
+                        a.destination-link-1(href="#")
+                            span Maldives
+                        a.destination-link-2(href="#")
+                            span Spain
+                        a.destination-link-3(href="#")
+                            span Norway
+                        a.destination-link-4(href="#")
+                            span Island
+                    .destination-arrow
+            section.sign-up-section
+                input.cross#cross(type="radio" name="cross")
+                label(for="cross")
+                div.sign-up-elements
+                    h3.h3-sign-up Sign up and get 20% off your first booking
+                    h3.h3-mobile-sign-up Sign up in the app and get 20% off your first booking
+                    a.sign-up-link(href="#") Sign up
+                .sign-up-logo
+                a.app-install(href="#") Install
+            footer
+                img(src="../assets/LinkedSprite.svg#logo-vector-white" alt="White text TripHouse placed as logo of site")
+                .footer-panel
+                    .footer-content
+                        p About
+                        a(href="#") How Triphouse works
+                        a(href="#") Careers
+                        a(href="#") Privacy
+                        a(href="#") Terms
+                    .footer-content
+                        p Property types
+                        a(href="#") Guest houses
+                        a(href="#") Hotels
+                        a(href="#") Apartments
+                        a(href="#") Villas
+                        a(href="#") Holiday homes
+                        a(href="#") Hostels
+                    .footer-content
+                        p Support
+                        a(href="#") Contact Customer Service
+                        a(href="#") FAQ
+                span &copy;2020 Triphouse, Inc. All rights reserved
+
+
+
+
+

@@ -4,7 +4,7 @@ footer{
     padding: 120px 104px;
 }
 
-[src="LinkedSprite.svg#logo-vector-white"]{
+[src="../assets/LinkedSprite.svg#logo-vector-white"]{
     display: none;
     width:98px;
     height: 19px;
@@ -71,7 +71,7 @@ footer span{
        text-align: center;
     }
 
-    [src="LinkedSprite.svg#logo-vector-white"]{
+    [src="../assets/LinkedSprite.svg#logo-vector-white"]{
         display: block;
         margin-left: auto;
         margin-right: auto;

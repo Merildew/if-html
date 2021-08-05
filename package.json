@@ -1,0 +1,21 @@
+{
+  "name": "if-html",
+  "version": "1.0.0",
+  "description": "Practice in HTML/CSS fot Intellect Fox courses",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merildew/if-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merildew/if-html/issues"
+  },
+  "homepage": "https://github.com/Merildew/if-html#readme"
+}

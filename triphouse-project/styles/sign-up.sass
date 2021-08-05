@@ -1,0 +1,133 @@
+.sign-up-section
+  background-color: #EAF0F9
+  margin: 0 104px
+  position: relative
+
+.h3-sign-up
+  margin-bottom: 33px
+
+.app-install
+  display: none
+
+.sign-up-logo
+  background: url("../assets/LinkedSprite.svg#sign-up")
+  position: absolute
+  left: 2%
+  top: 50%
+  transform: translate(0,-50%)
+  width: 86px
+  height: 86px
+
+.sign-up-elements
+  padding: 52px 134px
+
+.sign-up-link
+  font-size: 18px
+  font-weight: 400
+  line-height: 21px
+  color: #3077C6
+  padding: 13px 24px
+  background-color: #FFF
+  border-radius: 8px
+  border: 1px solid #3077C6
+  text-decoration: none
+  margin-top: 33px
+
+.h3-mobile-sign-up
+  display: none
+
+.cross
+  display: none
+
+.cross ~ label
+  background: url("../assets/LinkedSprite.svg#cross")
+  position: absolute
+  right: 2%
+  top: 12%
+  width: 26px
+  height: 26px
+  cursor: pointer
+
+.cross:checked ~ *
+  display: none
+
+@media (max-width: 1280px)
+  .sign-up-section
+    margin: 0 73px
+
+@media (max-width: 840px)
+  .sign-up-elements
+    padding-top: 20px
+    padding-bottom: 20px
+
+@media (max-width: 768px)
+  .h3-sign-up
+    display: none
+
+  .sign-up-link
+    display: none
+
+  .sign-up-section
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+  .app-install
+    display: block
+    right: 16px
+    font-size: 24px
+    line-height: 16px
+    color: #3077C6
+    text-decoration: none
+    font-weight: 500
+    order: 4
+
+  .h3-mobile-sign-up
+    margin: 25px 0
+    display: block
+    left: 120px
+    font-weight: 400
+
+  .sign-up-elements
+    padding: 0
+    width: 60%
+    order: 3
+
+  .cross ~ label
+    position: static
+    left: 17px
+    width: 16px
+    height: 16px
+    order: 1
+
+  .sign-up-logo
+    position: static
+    transform: translate(0)
+    background: url("../assets/LinkedSprite.svg#sign-up-logo")
+    height: 58px
+    width: 58px
+    left: 49px
+    order: 2
+
+@media (max-width: 680px)
+  .h3-mobile-sign-up
+    font-size: 20px
+
+@media (max-width: 425px)
+  .h3-mobile-sign-up
+    font-size: 12px
+    line-height: 14px
+
+  .app-install
+    font-size: 14px
+    line-height: 16px
+
+  .sign-up-elements
+    width: 11em
+
+
+
+
+
+

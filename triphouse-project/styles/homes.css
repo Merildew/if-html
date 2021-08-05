@@ -28,23 +28,23 @@
 
 .homes-link{
     position: relative;
-    width: var(--homes-img-size);
     height: var(--homes-img-size);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
 .homes-link-1{
-    background-image: url("../img/homes1.svg");
+    background-image: url("../assets/img/homes1.svg");
 }
 .homes-link-2{
-    background-image: url("../img/homes2.svg");
+    background-image: url("../assets/img/homes2.svg");
 }
 .homes-link-3{
-    background-image: url("../img/homes3.svg");
+    background-image: url("../assets/img/homes3.svg");
 }
 .homes-link-4{
-    background-image: url("../img/homes4.svg");
+    background-image: url("../assets/img/homes4.svg");
 }
 
 .homes-link::after{
@@ -95,7 +95,7 @@
 .switch2:checked ~ .homes-labels label:nth-child(1),
 .switch3:checked ~ .homes-labels label:nth-child(2),
 .switch4:checked ~ .homes-labels label:nth-child(3){
-    background: url('../LinkedSprite.svg#arrow') no-repeat;
+    background: url('../assets/LinkedSprite.svg#arrow') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -109,7 +109,7 @@
 .switch2:checked ~ .homes-labels label:nth-child(3),
 .switch3:checked ~ .homes-labels label:nth-child(4),
 .switch4:checked ~ .homes-labels label:nth-child(1){
-    background: url('../LinkedSprite.svg#arrow') no-repeat;
+    background: url('../assets/LinkedSprite.svg#arrow') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -118,39 +118,24 @@
     z-index: 1;
 }
 
-@media (max-width: 1440px) {
-    :root{
-        --homes-img-size: 263px;
-    }
-
-    .homes-panel{
-        justify-content: space-evenly;
-    }
-
-    .homes-item{
-        flex-basis: auto;
-        width: var(--homes-img-size);
-    }
-}
-
 @media (max-width: 1280px) {
     .homes-section{
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 73px;
+        padding-left: 73px;
     }
 
     .switch1:checked ~ .homes-labels label:nth-child(4),
     .switch2:checked ~ .homes-labels label:nth-child(1),
     .switch3:checked ~ .homes-labels label:nth-child(2),
     .switch4:checked ~ .homes-labels label:nth-child(3){
-        left: 20px;
+        left: 55px;
     }
 
     .switch1:checked ~ .homes-labels label:nth-child(2),
     .switch2:checked ~ .homes-labels label:nth-child(3),
     .switch3:checked ~ .homes-labels label:nth-child(4),
     .switch4:checked ~ .homes-labels label:nth-child(1){
-        right: 20px;
+        right: 55px;
     }
 }
 
@@ -161,12 +146,12 @@
 }
 
 @media (max-width: 1024px) {
-    :root{
-        --homes-img-size: 263px;
-    }
-
     .homes-4{
         display: none;
+    }
+
+    .homes-item{
+        flex-basis: 32%;
     }
 }
 
@@ -174,25 +159,19 @@
     :root{
         --homes-img-size: 245px;
     }
-
-    .switch1:checked ~ .homes-labels label:nth-child(4),
-    .switch2:checked ~ .homes-labels label:nth-child(1),
-    .switch3:checked ~ .homes-labels label:nth-child(2),
-    .switch4:checked ~ .homes-labels label:nth-child(3){
-        left: 8px;
-    }
-
-    .switch1:checked ~ .homes-labels label:nth-child(2),
-    .switch2:checked ~ .homes-labels label:nth-child(3),
-    .switch3:checked ~ .homes-labels label:nth-child(4),
-    .switch4:checked ~ .homes-labels label:nth-child(1){
-        right: 8px;
-    }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 840px) {
     :root {
         --homes-img-size: 220px;
+    }
+
+    .homes-link::after{
+        font-size: 20px;
+    }
+
+    .homes-item::after{
+        font-size: 20px;
     }
 }
 
@@ -202,11 +181,11 @@
     }
 
     .homes-item{
-        padding: 0;
+        flex-basis: 48%;
     }
 
     .homes-section{
-        padding: 24px 20px 40px;
+        padding: 51px 73px;
     }
 
     .homes-panel{
@@ -215,6 +194,16 @@
 
     .homes-3{
         display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    :root {
+        --homes-img-size: 230px;
+    }
+
+    .homes-section{
+        padding: 40px 20px;
     }
 
     .switch1:checked ~ .homes-labels label:nth-child(4),
@@ -232,28 +221,31 @@
     }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 425px) {
     :root {
-        --homes-img-size: 230px;
-    }
-}
-
-@media (max-width: 525px) {
-    :root {
-        --homes-img-size: 180px;
+        --homes-img-size: 156px;
     }
 
     .homes-section{
-        padding: 40px 8px;
+        padding: 40px 15px;
     }
 
     .homes-panel{
         margin-top: 32px;
+        justify-content: space-evenly;
     }
 
-    .homes-section h2{
+    h2{
         font-size: 28px;
         line-height: 33px;
+    }
+
+    .homes-link{
+        width: 156px;
+    }
+
+    .homes-item{
+        flex-basis: 25%;
     }
 
     .homes-link::after{
@@ -266,12 +258,6 @@
         margin: 26px 0 0;
         font-size: 12px;
         line-height: 14px;
-    }
-}
-
-@media (max-width: 425px) {
-    :root{
-        --homes-img-size: 156px;
     }
 
     .switch1:checked ~ .homes-labels label:nth-child(4),
@@ -288,6 +274,13 @@
     .switch4:checked ~ .homes-labels label:nth-child(1){
         width: 28px;
         height: 28px;
+    }
+}
+
+@media (max-width: 320px) {
+    .homes-link{
+        height: 120px;
+        width: 130px;
     }
 }
 

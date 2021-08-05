@@ -43,40 +43,40 @@
 }
 
 .switch2:checked~.homes-panel .homes-link-1{
-    background-image: url("../img/homes4.svg");
+    background-image: url("../assets/img/homes4.svg");
 }
 .switch2:checked~.homes-panel .homes-link-2{
-    background-image: url("../img/homes1.svg");
+    background-image: url("../assets/img/homes1.svg");
 }
 .switch2:checked~.homes-panel .homes-link-3{
-    background-image: url("../img/homes2.svg");
+    background-image: url("../assets/img/homes2.svg");
 }
 .switch2:checked~.homes-panel .homes-link-4{
-    background-image: url("../img/homes3.svg");
+    background-image: url("../assets/img/homes3.svg");
 }
 .switch3:checked~.homes-panel .homes-link-1{
-    background-image: url("../img/homes3.svg");
+    background-image: url("../assets/img/homes3.svg");
 }
 .switch3:checked~.homes-panel .homes-link-2{
-    background-image: url("../img/homes4.svg");
+    background-image: url("../assets/img/homes4.svg");
 }
 .switch3:checked~.homes-panel .homes-link-3{
-    background-image: url("../img/homes1.svg");
+    background-image: url("../assets/img/homes1.svg");
 }
 .switch3:checked~.homes-panel .homes-link-4{
-    background-image: url("../img/homes2.svg");
+    background-image: url("../assets/img/homes2.svg");
 }
 .switch4:checked~.homes-panel .homes-link-1{
-    background-image: url("../img/homes2.svg");
+    background-image: url("../assets/img/homes2.svg");
 }
 .switch4:checked~.homes-panel .homes-link-2{
-    background-image: url("../img/homes3.svg");
+    background-image: url("../assets/img/homes3.svg");
 }
 .switch4:checked~.homes-panel .homes-link-3{
-    background-image: url("../img/homes4.svg");
+    background-image: url("../assets/img/homes4.svg");
 }
 .switch4:checked~.homes-panel .homes-link-4{
-    background-image: url("../img/homes1.svg");
+    background-image: url("../assets/img/homes1.svg");
 }
 
 .switch2:checked~.homes-panel .homes-1::after{
