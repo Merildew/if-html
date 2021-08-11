@@ -9,10 +9,12 @@
     position: relative;
 }
 
+.slick-track{
+    display: flex;
+}
+
 .homes-panel{
     margin-top: 106px;
-    display: flex;
-    justify-content: space-between;
     overflow: hidden;
     text-align: left;
 }
@@ -23,7 +25,8 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    flex-basis: 24%;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .homes-link{
@@ -56,66 +59,47 @@
     margin-top: 24px;
 }
 
-.homes-1 .homes-link::after{
+.homes-link-1::after{
     content: "Hotel Leopold";
 }
-.homes-2 .homes-link::after{
+.homes-link-2::after{
     content: "Apartment Sunshine";
 }
-.homes-3 .homes-link::after{
+.homes-link-3::after{
     content: "Villa Kunerad";
 }
-.homes-4 .homes-link::after{
+.homes-link-4::after{
     content: "Hostel Friendship";
 }
 
-.homes-item::after{
+.homes-item span{
     color: #BFBFBF;
     margin-top: 78px;
 }
 
-.homes-1::after{
-    content: "Saint Petersburg, Russia";
-}
-.homes-2::after{
-    content: "Santa  Cruz de Tenerife, Spain";
-}
-.homes-3::after{
-    content: "Vysokie Tatry, Slowakia";
-}
-.homes-4::after{
-    content: "Berlin, Germany";
-}
-
-.homes-section input{
-    display: none;
-}
-
-.switch1:checked ~ .homes-labels label:nth-child(4),
-.switch2:checked ~ .homes-labels label:nth-child(1),
-.switch3:checked ~ .homes-labels label:nth-child(2),
-.switch4:checked ~ .homes-labels label:nth-child(3){
+.slick-prev{
     background: url('../assets/LinkedSprite.svg#arrow') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 80px;
     z-index: 1;
     transform: scale(-1,1);
+    font-size: 0;
+    border: none;
 }
 
-.switch1:checked ~ .homes-labels label:nth-child(2),
-.switch2:checked ~ .homes-labels label:nth-child(3),
-.switch3:checked ~ .homes-labels label:nth-child(4),
-.switch4:checked ~ .homes-labels label:nth-child(1){
+.slick-next{
     background: url('../assets/LinkedSprite.svg#arrow') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 48%;
+    top: 50%;
     right: 80px;
     z-index: 1;
+    font-size: 0;
+    border: none;
 }
 
 @media (max-width: 1280px) {
@@ -124,17 +108,11 @@
         padding-left: 73px;
     }
 
-    .switch1:checked ~ .homes-labels label:nth-child(4),
-    .switch2:checked ~ .homes-labels label:nth-child(1),
-    .switch3:checked ~ .homes-labels label:nth-child(2),
-    .switch4:checked ~ .homes-labels label:nth-child(3){
+    .slick-prev{
         left: 55px;
     }
 
-    .switch1:checked ~ .homes-labels label:nth-child(2),
-    .switch2:checked ~ .homes-labels label:nth-child(3),
-    .switch3:checked ~ .homes-labels label:nth-child(4),
-    .switch4:checked ~ .homes-labels label:nth-child(1){
+    .slick-next{
         right: 55px;
     }
 }
@@ -142,16 +120,6 @@
 @media (max-width: 1140px) {
     :root{
         --homes-img-size: 230px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .homes-4{
-        display: none;
-    }
-
-    .homes-item{
-        flex-basis: 32%;
     }
 }
 
@@ -170,7 +138,7 @@
         font-size: 20px;
     }
 
-    .homes-item::after{
+    .homes-item span{
         font-size: 20px;
     }
 }
@@ -180,20 +148,12 @@
         --homes-img-size: 263px;
     }
 
-    .homes-item{
-        flex-basis: 48%;
-    }
-
     .homes-section{
         padding: 51px 73px;
     }
 
     .homes-panel{
         margin-top: 80px;
-    }
-
-    .homes-3{
-        display: none;
     }
 }
 
@@ -206,17 +166,11 @@
         padding: 40px 20px;
     }
 
-    .switch1:checked ~ .homes-labels label:nth-child(4),
-    .switch2:checked ~ .homes-labels label:nth-child(1),
-    .switch3:checked ~ .homes-labels label:nth-child(2),
-    .switch4:checked ~ .homes-labels label:nth-child(3){
+    .slick-prev{
         left: 4px;
     }
 
-    .switch1:checked ~ .homes-labels label:nth-child(2),
-    .switch2:checked ~ .homes-labels label:nth-child(3),
-    .switch3:checked ~ .homes-labels label:nth-child(4),
-    .switch4:checked ~ .homes-labels label:nth-child(1){
+    .slick-next{
         right: 4px;
     }
 }
@@ -232,20 +186,11 @@
 
     .homes-panel{
         margin-top: 32px;
-        justify-content: space-evenly;
     }
 
     h2{
         font-size: 28px;
         line-height: 33px;
-    }
-
-    .homes-link{
-        width: 156px;
-    }
-
-    .homes-item{
-        flex-basis: 25%;
     }
 
     .homes-link::after{
@@ -254,24 +199,18 @@
         margin-top: 8px;
     }
 
-    .homes-item::after{
+    .homes-item span{
         margin: 26px 0 0;
         font-size: 12px;
         line-height: 14px;
     }
 
-    .switch1:checked ~ .homes-labels label:nth-child(4),
-    .switch2:checked ~ .homes-labels label:nth-child(1),
-    .switch3:checked ~ .homes-labels label:nth-child(2),
-    .switch4:checked ~ .homes-labels label:nth-child(3){
+    .slick-prev{
         width: 28px;
         height: 28px;
     }
 
-    .switch1:checked ~ .homes-labels label:nth-child(2),
-    .switch2:checked ~ .homes-labels label:nth-child(3),
-    .switch3:checked ~ .homes-labels label:nth-child(4),
-    .switch4:checked ~ .homes-labels label:nth-child(1){
+    .slick-next{
         width: 28px;
         height: 28px;
     }

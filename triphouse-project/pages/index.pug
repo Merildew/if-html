@@ -9,7 +9,6 @@ html(lang="en")
         link(href="../styles/top-section.css" rel="stylesheet")
         link(href="../styles/main.css" rel="stylesheet")
         link(href="../styles/homes.css" rel="stylesheet")
-        link(href="../styles/homes-switches.css" rel="stylesheet")
         link(href="../styles/destinations.css" rel="stylesheet")
         link(href="../styles/sign-up.css" rel="stylesheet")
     body
@@ -57,24 +56,33 @@ html(lang="en")
                         p Real guest reviews
             section.homes-section
                 h2 Homes guests loves
-                input.switch1#switch1(checked type="radio" name="slider")
-                input.switch2#switch2(type="radio" name="slider")
-                input.switch3#switch3(type="radio" name="slider")
-                input.switch4#switch4(type="radio" name="slider")
+                .homes-arrow-right
+                .homes-arrow-left
                 .homes-panel
-                    .homes-item.homes-1
+                    .homes-item
                         a.homes-link.homes-link-1(href="#")
-                    .homes-item.homes-2
+                        span Saint Petersburg, Russia
+                    .homes-item
                         a.homes-link.homes-link-2(href="#")
-                    .homes-item.homes-3
+                        span Santa  Cruz de Tenerife, Spain
+                    .homes-item
                         a.homes-link.homes-link-3(href="#")
-                    .homes-item.homes-4
+                        span Vysokie Tatry, Slowakia
+                    .homes-item
                         a.homes-link.homes-link-4(href="#")
-                .homes-labels
-                    label(for="switch1")
-                    label(for="switch2")
-                    label(for="switch3")
-                    label(for="switch4")
+                        span Berlin, Germany
+                    .homes-item
+                        a.homes-link.homes-link-1(href="#")
+                        span Saint Petersburg, Russia
+                    .homes-item
+                        a.homes-link.homes-link-2(href="#")
+                        span Santa  Cruz de Tenerife, Spain
+                    .homes-item
+                        a.homes-link.homes-link-3(href="#")
+                        span Vysokie Tatry, Slowakia
+                    .homes-item
+                        a.homes-link.homes-link-4(href="#")
+                        span Berlin, Germany
             section.destinations-section
                 h2 The best destinations
                 .destination-menu
@@ -123,6 +131,9 @@ html(lang="en")
                         a(href="#") Contact Customer Service
                         a(href="#") FAQ
                 span &copy;2020 Triphouse, Inc. All rights reserved
+                script(src="../../node_modules/jquery/dist/jquery.js")
+                script(src="../js/script.js")
+                script(src="../js/slick.min.js")
 
 
 
