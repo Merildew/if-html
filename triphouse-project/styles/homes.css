@@ -78,7 +78,7 @@
 }
 
 .slick-prev{
-    background: url('../assets/LinkedSprite.svg#arrow') no-repeat;
+    background: url('../assets/img/LinkedSprite.svg#arrow') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -91,7 +91,7 @@
 }
 
 .slick-next{
-    background: url('../assets/LinkedSprite.svg#arrow') no-repeat;
+    background: url('../assets/img/LinkedSprite.svg#arrow') no-repeat;
     width: 40px;
     height: 40px;
     position: absolute;

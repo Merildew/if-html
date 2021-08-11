@@ -19,43 +19,70 @@
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #383838;
 }
 
 .advantage-item{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    height: 8em;
+    height: 7.3em;
     width: 12em ;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #383838;
+    position: relative;
 }
 
-[src="../assets/LinkedSprite.svg#support"]{
+.support-online a{
+    background: url("../assets/img/LinkedSprite.svg#support");
     margin-top:4px;
     width: 75px;
     height: 92px;
 }
 
-[src="../assets/LinkedSprite.svg#community-directly"]{
+.communicate-directly a{
+    background: url("../assets/img/LinkedSprite.svg#community-directly");
     margin-top: 8px;
     width: 84px;
     height: 84px;
 }
 
-[src="../assets/LinkedSprite.svg#book-online"]{
+.book-online a{
+    background: url("../assets/img/LinkedSprite.svg#book-online");
     margin-top: 17px;
     width: 100px;
     height: 67px;
 }
 
-[src="../assets/LinkedSprite.svg#reviews"]{
+.guest-reviews a{
+    background: url("../assets/img/LinkedSprite.svg#reviews");
     margin-top: 4px;
     width: 92px;
     height: 84px;
+}
+
+.advantage-item::after{
+    text-decoration: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.support-online::after{
+    content: "Support 24/7";
+}
+
+.communicate-directly::after{
+    content: "Communicate directly";
+}
+
+.book-online::after{
+    content: "Book online";
+}
+
+.guest-reviews::after{
+    content: "Real guest reviews";
 }
 
 @media (max-width: 1280px) {
@@ -97,33 +124,32 @@
     .advantages-panel{
         margin: 0;
         flex-direction: column;
-        font-size: 15px;
-        line-height: 18px;
     }
 
     .advantage-item{
         width: 100%;
         margin-top: 32px;
         height: 7em;
-        justify-content: space-between;
+        font-size: 15px;
+        line-height: 18px;
     }
 
-    [src="../assets/LinkedSprite.svg#support"]{
+    .support-online a{
         width: 53px;
         height: 65px;
     }
 
-    [src="../assets/LinkedSprite.svg#community-directly"]{
+    .communicate-directly a{
         width: 59px;
         height: 59px;
     }
 
-    [src="../assets/LinkedSprite.svg#book-online"]{
+    .book-online a{
         width: 70px;
         height: 47px;
     }
 
-    [src="../assets/LinkedSprite.svg#reviews"]{
+    .guest-reviews a{
         width: 65px;
         height: 59px;
     }

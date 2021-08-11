@@ -1,3 +1,6 @@
+import $ from '../../node_modules/jquery/dist/jquery.js'
+import '../js/slick.min.js'
+
 $(document).ready(function(){
     $('.homes-panel').slick({
         slidesToShow: 4,

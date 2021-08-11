@@ -14,7 +14,8 @@ header{
     font-weight: 400;
 }
 
-[src="../assets/LinkedSprite.svg#logo-vector"]{
+.main-logo-link{
+    background: url("../assets/img/LinkedSprite.svg#logo-vector");
     width: 205px;
     height: 40px;
 }
@@ -47,35 +48,35 @@ header{
 }
 
 .account-icon{
-    background-image: url("../assets/LinkedSprite.svg#AccountCircle");
+    background-image: url("../assets/img/LinkedSprite.svg#AccountCircle");
     width: 40px;
     height: 40px;
 }
 
 .account-icon:hover, .account-icon:active{
-    background-image: url("../assets/LinkedSprite.svg#AccountCircle-hover");
+    background-image: url("../assets/img/LinkedSprite.svg#AccountCircle-hover");
 }
 
 .night-icon{
-    background-image: url("../assets/LinkedSprite.svg#Night");
+    background-image: url("../assets/img/LinkedSprite.svg#Night");
     width: 30px;
     height: 30px;
     margin-top: 5px;
 }
 
 .night-icon:hover, .night-icon:active{
-    background-image: url("../assets/LinkedSprite.svg#Night-hover");
+    background-image: url("../assets/img/LinkedSprite.svg#Night-hover");
 }
 
 .menu-icon{
-    background-image: url("../assets/LinkedSprite.svg#menu");
+    background-image: url("../assets/img/LinkedSprite.svg#menu");
     width: 40px;
     height: 28px;
     display: none;
 }
 
 .menu-icon:hover, .menu-icon:active{
-    background-image: url("../assets/LinkedSprite.svg#menu-hover");
+    background-image: url("../assets/img/LinkedSprite.svg#menu-hover");
 }
 
 .header-icon{
@@ -167,12 +168,14 @@ h1{
     margin-right: auto;
 }
 
-[src="../assets/LinkedSprite.svg#google-play-badge"]{
+.google-download{
+    background: url("../assets/img/LinkedSprite.svg#google-play-badge");
     width: 135px;
     height: 40px;
 }
 
-[src="../assets/LinkedSprite.svg#app-store-badge"]{
+.app-store-download{
+    background: url("../assets/img/LinkedSprite.svg#app-store-badge");
     width: 118px;
     height: 40px;
 }
@@ -263,7 +266,7 @@ h1{
         padding: 0 16px 40px;
     }
 
-    [src="../assets/LinkedSprite.svg#logo-vector"]{
+    .main-logo-link{
         width: 122px;
         height: 24px;
     }

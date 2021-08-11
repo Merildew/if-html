@@ -4,18 +4,11 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         title TripHouse
-        link(href="../styles/advantages-styles.css" rel="stylesheet")
-        link(href="../styles/footer-styles.css" rel="stylesheet")
-        link(href="../styles/top-section.css" rel="stylesheet")
-        link(href="../styles/main.css" rel="stylesheet")
-        link(href="../styles/homes.css" rel="stylesheet")
-        link(href="../styles/destinations.css" rel="stylesheet")
-        link(href="../styles/sign-up.css" rel="stylesheet")
     body
         .wrapper
             section.top-section
                 header
-                    img(src="../assets/LinkedSprite.svg#logo-vector" alt="Blue text TripHouse placed as logo of site")
+                    a.main-logo-link(href="index.html")
                     .header-content
                         a.header-link(href="#") Stays
                         a.header-link(href="#") Attractions
@@ -35,25 +28,19 @@ html(lang="en")
                         input.search-input.visitors-search(type="text" name="visitors" placeholder="Visitors")
                         input(type="submit" value="Search")
                     .apps-logo
-                        a(href="https://play.google.com/store")
-                            img(src="../assets/LinkedSprite.svg#google-play-badge" alt="")
-                        a(href="https://www.apple.com/app-store/")
-                            img(src="../assets/LinkedSprite.svg#app-store-badge" alt="")
+                        a.google-download(href="https://play.google.com/store")
+                        a.app-store-download(href="https://www.apple.com/app-store/")
             section.offer-section
                 h2.offer-title What do we offer
                 .advantages-panel
-                    .advantage-item
-                        img(src="../assets/LinkedSprite.svg#support" alt="blue headphones with microphone")
-                        p Support 24/7
-                    .advantage-item
-                        img(src="../assets/LinkedSprite.svg#community-directly" alt="2 blue conversation boxes near each other")
-                        p Communicate directly
-                    .advantage-item
-                        img(src="../assets/LinkedSprite.svg#book-online" alt="blue laptop behind blue mobile phone")
-                        p Book online
-                    .advantage-item
-                        img(src="../assets/LinkedSprite.svg#reviews" alt="blue thumb shows the class gesture")
-                        p Real guest reviews
+                    .advantage-item.support-online
+                        a(href="#")
+                    .advantage-item.communicate-directly
+                        a(href="#")
+                    .advantage-item.book-online
+                        a(href="#")
+                    .advantage-item.guest-reviews
+                        a(href="#")
             section.homes-section
                 h2 Homes guests loves
                 .homes-arrow-right
@@ -110,7 +97,7 @@ html(lang="en")
                 .sign-up-logo
                 a.app-install(href="#") Install
             footer
-                img(src="../assets/LinkedSprite.svg#logo-vector-white" alt="White text TripHouse placed as logo of site")
+                a.footer-logo-link(href="index.html")
                 .footer-panel
                     .footer-content
                         p About
@@ -131,9 +118,6 @@ html(lang="en")
                         a(href="#") Contact Customer Service
                         a(href="#") FAQ
                 span &copy;2020 Triphouse, Inc. All rights reserved
-                script(src="../../node_modules/jquery/dist/jquery.js")
-                script(src="../js/script.js")
-                script(src="../js/slick.min.js")
 
 
 
