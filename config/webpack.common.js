@@ -7,7 +7,7 @@ module.exports = {
   entry: {
     styles: path.resolve(__dirname, '../triphouse-project/styles/index.scss'),
     index: path.resolve(__dirname, '../triphouse-project/pages/index.pug'),
-    app: path.resolve(__dirname, '../triphouse-project/js/slick.min.js'),
+    app: path.resolve(__dirname, '../triphouse-project/js/index.js'),
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -38,10 +38,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../triphouse-project/pages/index.pug'),
     }),
