@@ -1,0 +1,268 @@
+.reviews-section
+  padding: 0 104px 120px
+  text-align: center
+  position: relative
+
+.reviews-panel
+  padding-top: 104px
+  overflow: hidden
+
+.reviews-h2-hidden
+  display: none
+
+.review-item
+  text-align: left
+  display: flex
+  flex-direction: column
+  margin-left: 8px
+  margin-right: 8px
+  >a
+    height: 395px
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom
+    &:hover::before
+      background-color: rgba(56, 56, 56, 0.4)
+      position: absolute
+      top: 88%
+      right: 0
+      bottom: 0
+      left: 0
+      padding: 16px 0 11px 24px
+      text-decoration: none
+      color: #FFFFFF
+
+.reviews-link-1
+  background: url("../assets/img/review-1.svg")
+  &:hover::before
+    content: "From 250 USD"
+
+.reviews-link-2
+  background: url("../assets/img/review-2.svg")
+  &:hover::before
+    content: "From 40 USD"
+
+.reviews-link-3
+  background: url("../assets/img/review-3.svg")
+  &:hover::before
+    content: "From 100 USD"
+
+.reviews-info-panel
+  padding: 24px 24px
+  position: relative
+
+.review-item
+  background-color: #EAF0F9
+  font-size: 18px
+  line-height: 21px
+  font-weight: 400
+
+.place-name
+  text-decoration: none
+  color: #3077C6
+  font-weight: 500
+
+.rating
+  font-weight: 600
+  line-height: 25px
+  font-family: "Open Sans", sans-serif
+  position: absolute
+  background-color: #10367C
+  border-radius: 8px
+  color: #FFFFFF
+  padding: 4px 11px
+  right: 24px
+  top: 24px
+
+
+.place-location
+  color: #3077C6
+  padding-top: 16px
+  width: 100%
+  display: inline-block
+
+.person-info
+  position: relative
+  padding: 7px 0px 7px 80px
+  margin: 24px 0
+
+.person-img
+  background: url("../assets/img/LinkedSprite.svg#AccountCircle-review")
+  width: 53px
+  height: 53px
+  position: absolute
+  top: 5px
+  left: 5px
+
+.person-nationality
+  color: #BFBFBF
+  padding-top: 8px
+
+.review-count
+  position: absolute
+  top: 64px
+  right: 24px
+  text-decoration: none
+  color: #BFBFBF
+  font-size: 14px
+  line-height: 16px
+  &:hover
+    border-bottom: 1px solid #BFBFBF
+
+.reviews-panel
+  .slick-next, .slick-prev
+    top: 33%
+
+.slick-dots
+  display: flex
+  align-items: center
+  justify-content: center
+  li
+    list-style: none
+    margin: 0 8px
+  button
+    font-size: 0
+    width: 8px
+    height: 8px
+    background-color: #FFFFFF
+    border-radius: 50%
+    border: 1px solid #333
+  .slick-active
+    button
+      background-color: #333
+
+
+@media (max-width: 1280px)
+  .reviews-section
+    padding: 0 73px 120px
+  .review-item
+    font-size: 16px
+    >a
+      height: 340px
+
+@media (max-width: 1140px)
+  .review-item
+    >a
+      height: 264px
+  .review-count
+    font-size: 12px
+  .place-location
+    font-size: 14px
+
+@media (max-width: 1024px)
+  .review-item
+    font-size: 18px
+    >a
+      height: 395px
+  .review-count
+    font-size: 14px
+  .place-location
+    font-size: 18px
+
+@media (max-width: 925px)
+  .review-item
+    >a
+      height: 370px
+  .person-info
+    margin: 16px 0
+
+@media (max-width: 840px)
+  .review-item
+    font-size: 16px
+    >a
+      height: 330px
+  .review-count
+    font-size: 12px
+  .place-location
+    font-size: 14px
+
+@media (max-width: 768px)
+  .reviews-section
+    background-color: #EAF0F9
+    padding: 40px 73px
+
+  .reviews-panel
+    padding-top: 32px
+
+  .reviews-info-panel
+    padding: 24px 0
+
+  .review-item
+    font-size: 22px
+    >a
+      height: 550px
+
+  .place-name, .place-location
+    font-size: 22px
+
+  .review-count
+    font-size: 18px
+
+  .rating
+    right: 0
+
+  .review-count
+    right: 0
+
+@media (max-width: 680px)
+  .reviews-section
+    padding: 40px 20px
+
+@media (max-width: 540px)
+  .review-item
+    font-size: 18px
+    >a
+      height: 330px
+
+  .review-count
+    font-size: 14px
+
+  .place-location
+    font-size: 18px
+
+  .reviews-info-panel
+    padding: 12px 0
+
+  .rating
+    top: 12px
+
+  .review-count
+    top: 55px
+
+@media (max-width: 425px)
+  .reviews-section
+    padding: 40px 15px
+
+  .reviews-h2-hidden
+    display: block
+
+  .reviews-h2
+    display: none
+
+@media (max-width: 375px)
+  .review-item
+    font-size: 15px
+    line-height: 18px
+    >a
+      height: 325px
+
+  .place-name, .place-location
+    font-size: 15px
+    line-height: 18px
+
+  .place-location
+    padding-top: 8px
+
+  .rating
+    top: 12px
+    right: 0
+
+  .review-count
+    top: 43px
+    right: 0
+
+
+
+
+
