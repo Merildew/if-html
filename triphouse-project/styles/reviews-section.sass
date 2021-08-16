@@ -33,17 +33,17 @@
       text-decoration: none
       color: #FFFFFF
 
-.reviews-link-1
+.reviews-panel :nth-child(3n+4) .reviews-image
   background: url("../assets/img/review-1.svg")
   &:hover::before
     content: "From 250 USD"
 
-.reviews-link-2
+.reviews-panel :nth-child(3n+5) .reviews-image
   background: url("../assets/img/review-2.svg")
   &:hover::before
     content: "From 40 USD"
 
-.reviews-link-3
+.reviews-panel :nth-child(3n+3) .reviews-image
   background: url("../assets/img/review-3.svg")
   &:hover::before
     content: "From 100 USD"
@@ -84,7 +84,7 @@
 
 .person-info
   position: relative
-  padding: 7px 0px 7px 80px
+  padding: 7px 0 7px 80px
   margin: 24px 0
 
 .person-img
